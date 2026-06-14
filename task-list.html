@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List - TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="add-task.html">Add Task</a> |
+        <a href="task-list.html">Task List</a> |
+        <a href="task-detail.html">Task Detail</a> |
+        <a href="about.html">About</a>
+    </nav>
+
+    <h1>Task List Overview</h1>
+
+    <div class="filter-actions" style="margin-bottom: 20px;">
+        <button class="btn">All</button>
+        <button class="btn">Pending</button>
+        <button class="btn">Completed</button>
+    </div>
+
+    <table border="1" style="width: 100%; text-align: left; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Task Title</th>
+                <th>Target Date</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fix Database Setup</td>
+                <td>2026-06-20</td>
+                <td>High</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Design Homepage HTML</td>
+                <td>2026-06-15</td>
+                <td>Medium</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Write CI/CD Pipeline</td>
+                <td>2026-06-25</td>
+                <td>High</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
