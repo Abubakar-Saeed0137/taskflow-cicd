@@ -1,0 +1,14 @@
+name: CD Pipeline (No External Deploy)
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CD message success
+        run: echo "CD SUCCESS - pipeline executed successfully"
