@@ -1,4 +1,4 @@
-name: CD Pipeline (No External Deploy)
+name: CD Pipeline
 
 on:
   push:
@@ -8,7 +8,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    environment: development
     steps:
-      - name: CD message success
-        run: echo "CD SUCCESS - pipeline executed successfully"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Render via Webhook
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+
+      - name: Confirm Deployment
+        run: |
+          echo "Deployment triggered successfully at $(date)"
