@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deployment Simulation
-        run: echo "CD SUCCESS - Deployment simulated (no Render used)"
+      - name: CD message success
+        run: echo "CD SUCCESS - pipeline executed successfully"
