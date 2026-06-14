@@ -1,0 +1,95 @@
+/* style.css - TaskFlow Shared Stylesheet */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Dashboard Summary Boxes */
+.summary-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.summary-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.summary-box h3 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+/* Common Container */
+.container, .task-list-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn, button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.btn:hover, button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styling for Task List */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
