@@ -1,4 +1,4 @@
-name: CD Pipeline
+name: CD Pipeline (No External Deploy)
 
 on:
   push:
@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger Render Deploy
-        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+      - name: Deployment Simulation
+        run: echo "CD SUCCESS - Deployment simulated (no Render used)"
